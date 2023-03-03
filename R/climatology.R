@@ -254,4 +254,10 @@ ggplot2::ggsave('figures/wb_est_cl.png',units="in", width=10, height=5,
                 dpi=300)
 
 
-write.csv(tab_f,'data/climatology.csv')
+write.csv(tab_f |>
+            dplyr::mutate(
+              wb = dplyr::case_when(
+                exc > 0~ exc,
+                exc <= 0 ~ -(def)
+              ))
+            ,'data/climatology.csv')
