@@ -1,5 +1,5 @@
 
-# **Forecasting potential evapotranspiration through machine learning algorithms to optimize the hydrological services assessment**
+# **ETpML: Forecasting potential evapotranspiration through machine learning algorithms to optimize hydrological services assessments**
 
 This repository contains the data and codes used
 
